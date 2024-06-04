@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <script src="todo.js"></script>
+    
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <input type="title" placeholder="title" id="title">
+    <input type="description" placeholder="description" id="description">
+    <input type="date" placeholder="date" id="Date">
+    <button onclick="createTodo()">Create Todo</button>
+    <button onclick="readTodos()">Read Todos</button>
+    <button onclick="updateTodo()">Update Todo</button>
+    <button onclick="deleteTodo()">Delete Todo</button>
+    <button onclick="showTable()">Show Table</button>
+    <br><br>
+    <div id="tableContainer"></div>
+     <!-- Table -->
+     <div id="tableContainer">
+  <table id="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Id</th>
+        <th>Completed</th>
+      </tr>
+    </thead>
+    <tbody id="tbody"></tbody>
+  </table>
+</div>
+
+
+</body>
+</html>

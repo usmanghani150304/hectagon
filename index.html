@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Tostify -->
+    <link rel="stylesheet" href="toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <title>LOGIN-REGISTER</title>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div id="main">
+            <input type="checkbox" id="chk" aria-hidden="true">
+
+            <div class="signup">
+                <form>
+                    <label for="chk" aria-hidden="true">Register</label>
+
+                    <input type="email" name="email" placeholder="Email" id="register-email" required="">
+                  <!-- <input type="password"name="password"placeholder="password"id="password" required=""> -->
+
+                    <button onclick=" handleUserRegister()">Register</button>
+                </form>
+            </div>
+
+            <div class="login">
+                <form>
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <input type="email" name="email" placeholder="Email" id="login-email" required="">
+                    <!-- <input type="password"name="password"placeholder="password"id="password" required=""> -->
+                    <button onclick="handleUserLogin()">Login</button>
+                </form>
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+<p></p>
+    </footer>
+</body>
+
+</html>
